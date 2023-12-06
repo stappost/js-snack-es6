@@ -39,3 +39,9 @@ SCAFFOLDING SNACK 2
 4 - utilizzare funzione di numeri casuali per assegnarli a falli subiti e punti fatti
 5 - destrutturando l'array ne creiamo un'altro con solo nomi e falli subiti
 6 - stampiamo tutto in console
+
+SCAFFOLDING SNACK 3
+1 - creare un array di oggetti con la lista che ci è stata data
+2 - creare funzione che genera casualmente una lettera
+3 - aggiungere agli oggetti un cartellino con una lettera casuale
+4 - creare un nuovo array con gli stessi oggetti compresi di cartellino
