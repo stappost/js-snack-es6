@@ -24,3 +24,18 @@ Questi articoli sono inseriti in un array di oggetti.
 Dobbiamo attaccare a ognuno un cartellino position con una lettera dell'alfabeto generata casualmente e inserire gli oggetti così modificati in un nuovo array di oggetti.
 BONUS 2
 Stampare in pagina oltre che in console!
+
+SCAFFOLDING SNACK 1
+1 - creare array di oggetti
+2 - per ogni oggetto/bici mettere nome e peso
+3 - ciclare gli oggetti confrontando il loro peso e determinare il minore
+4 - creare due variabili con gli elementi dell'oggetto con minor peso
+5 - stampare le variabili con il template literal
+
+SCAFFOLDING SNACK 2
+1 - creare array di oggetti di squadre di calcio
+2 - per ogni oggetto definire nome. punti fatti e falli subiti settarli a 0
+3 - creare funzione che crea numeri casuali 
+4 - utilizzare funzione di numeri casuali per assegnarli a falli subiti e punti fatti
+5 - destrutturando l'array ne creiamo un'altro con solo nomi e falli subiti
+6 - stampiamo tutto in console
