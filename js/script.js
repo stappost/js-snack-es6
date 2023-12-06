@@ -96,3 +96,53 @@ let withoutscore = teams.map( (elem) =>{
 // stampiamo tutto in console
 console.log(teams);
 console.log(withoutscore)
+
+// ----------------------SNACK 3------------------ 
+
+// creare un array di oggetti con la lista che ci è stata data
+const articles =[
+    {
+        name: "Poppy",      
+        type: "tshirt",
+        color: "red"
+    },
+    {
+        name: "Jumping",      
+        type: "occhiali",
+        color: "blue"
+    },
+    {
+        name: "CrissCross",      
+        type: "scarpe",
+        color: "black"
+    },
+    {
+        name: "Jenny",      
+        type: "borsa",
+        color: "pink"
+    },
+]
+// creare funzione che genera casualmente una lettera
+// si può utilizzare charAt() per semplificare  
+function letter_random(){
+    let letters =
+    ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q"
+    ,"r","s","t","u","v","w","x","y","z"];
+
+    let letter = letters[Math.floor(Math.random() * 26)];
+
+    return letter
+}
+
+
+// aggiungere agli oggetti un cartellino con una lettera casuale
+// creare un nuovo array con gli stessi oggetti compresi di cartellino
+
+const articles_complete = articles.map((elem) =>{ 
+    elem.position = letter_random()
+    return elem
+})
+
+console.log(articles_complete)
+
+console.log(articles)
