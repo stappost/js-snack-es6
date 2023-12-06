@@ -1,3 +1,5 @@
+// ----------------------SNACK 1 -------------------------
+
 // creare array di oggetti
 //  per ogni oggetto/bici mettere nome e peso
 const bikes =[
@@ -34,9 +36,63 @@ bikes.forEach((elem) =>{
 console.log(peso_min)
 //  creare due variabili con gli elementi dell'oggetto con minor peso
 //  stampare le variabili con il template literal
+// ciclo 
 bikes.forEach((elem) =>{
     if(peso_min == elem.peso){
         let { nome, peso} = elem
         console.log(`la bici più leggera è ${nome} con un peso di ${peso}kg`)
     }
 })
+
+// ----------------------SNACK 2------------------ 
+
+// creare array di oggetti di squadre di calcio
+// per ogni oggetto definire nome. punti fatti e falli subiti settarli a 0
+const teams=[
+    {
+        nome: "Milan",
+        punti_fatti: 0,
+        falli_subiti: 0
+    },
+    {
+        nome: "Inter",
+        punti_fatti: 0,
+        falli_subiti: 0
+    },
+    {
+        nome: "Juventus",
+        punti_fatti: 0,
+        falli_subiti: 0
+    },
+    {
+        nome: "Roma",
+        punti_fatti: 0,
+        falli_subiti: 0
+    },
+    {
+        nome: "AlbinoLeffe",
+        punti_fatti: 0,
+        falli_subiti: 0
+    },
+]
+// creare funzione che crea numeri casuali 
+function random_number(){
+    return  Math.floor(Math.random() * 20 + 1);
+}
+// utilizzare funzione di numeri casuali per assegnarli a falli subiti e punti fatti
+teams.forEach((elem) =>{
+    elem.punti_fatti = random_number();
+    elem.falli_subiti = random_number();
+})
+
+// destrutturando l'array ne creiamo un'altro con solo nomi e falli subiti
+
+
+let withoutscore = teams.map( (elem) =>{
+    let { nome , falli_subiti } = elem
+    let obj = {nome, falli_subiti};
+    return obj
+})
+// stampiamo tutto in console
+console.log(teams);
+console.log(withoutscore)
