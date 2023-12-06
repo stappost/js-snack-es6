@@ -139,10 +139,10 @@ function letter_random(){
 // creare un nuovo array con gli stessi oggetti compresi di cartellino
 
 const articles_complete = articles.map((elem) =>{ 
-    elem.position = letter_random()
-    return elem
+    let article={...elem, position: letter_random()}
+    return article
 })
 
 console.log(articles_complete)
-
 console.log(articles)
+
